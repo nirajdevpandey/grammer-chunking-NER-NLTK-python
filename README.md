@@ -11,7 +11,7 @@ followings are the steps involved in order to achieve the objective
 ```
 desclaimer  - you don't need anything else except some basic packages of nltk to be installed. Thanks
 
-Here is the code snippet which will help you to understand how to chunk a given text and the tree visualization as well. 
+### Here is the code snippet which will help you to understand how to chunk a given text and the tree visualization as well. 
 
 ```python
 import nltk
@@ -23,7 +23,7 @@ for sent in conll2000.tagged_sents():
     for subtree in tree.subtrees():
         if subtree.label() == 'CHUNK': print(subtree)
 ```
-Here is what `trigram chunker` look like 
+### Here is what `trigram chunker` look like 
 
 ```python
 class TrigramChunkParser(ChunkParserI):
